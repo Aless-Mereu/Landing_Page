@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconos web https://ionicons.com/usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="icon" type="image/png" href="img/5741483.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="index.html" class="logo">Alessandro García</a>
+            <ul class="navbar">
+                <li><a href="quien_soy.html">Quien soy</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="proyectos_destacados.html">Proyectos destacados</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+
+        </header>
+
+
+
+        <form class="formulario" action="mailto:alessandrog.mereu@gmailcom">
+            <fieldset>
+                <legend class="iniciales">Su informacion</legend>
+                <fieldset>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Indica tu nombre de pila" required><br><br>
+
+                    <label for="Apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" placeholder="Indica tus apellidos" required><br><br>
+
+                    <label for="calle">Nombre de la empresa:</label>
+                    <input type="text" name="calle" placeholder="Indica el nombre de la empresa" required><br><br>
+
+                    <label for="numero">Número de teléfono:</label>
+                    <input type="text" name="numero" placeholder="Indica tu numero"><br><br>
+
+                    <label for="ciudad"> Ciudad:</label>
+                    <input type="text" name="ciudad" placeholder="Indica tu ciudad"><br><br>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="dni" placeholder="Indica tu DNI"><br><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" placeholder="Indica tu correo electronico" required><br><br>
+                </fieldset>
+                
+                <fieldset>
+                   
+                    <label for="personaje">Selecciona el motivo de contactar:</label>
+                    <select name="motivo" id="motivo" required>
+                        <option value="Jessie">Candidato puesto</option>
+                        <option value="Walter">Presupuesto</option>
+                        <option value="Saul">Ligar conmigo</option>
+                        <option value="Gustavo Fring"> Montar un comando</option>
+                        <option value="Mike Ehrmantraut">Cualquier otra chorrada</option>
+                        
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentarios</legend>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                        placeholder="Deja tus comentarios"></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar"><br><br>
+                <input type="reset" value="Borrar"><br><br>
+                <input type="file" value="Seleccionar archivo">
+            </fieldset>
+
+        </form>
+        </div>
+        <div class="imgBox">
+            <img src="" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy;Web personal creada para la materia de Lenguaje de Marcas <br>del CFGS de DAM
+            </p>
+        </div>
+        <ul class="redesSociales">
+            <li>
+                <a href="mailto:alessandrog.mereu@gmail.com" target="_blank"><ion-icon
+                        name="mail-open-outline"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://github.com/Aless-Mereu" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

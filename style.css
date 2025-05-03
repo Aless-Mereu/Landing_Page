@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: "Lora", serif;
+}
+
+body{
+    background-image: url(img/fondo-tecnologia-abstracta-placa-circuito-negro_88343-4645.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+}
+header .logo{
+    color: rgb(247, 244, 244);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background:rgb(146, 154, 50); */
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-family: "Lora", serif;
+    font-weight:600;
+    align-items:center;
+}
+
+header.logo:hover{
+    color: rgb(220, 17, 31);
+    background:  rgb(247, 244, 244);
+    transition: 1s;
+
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+   text-decoration: none;
+   color :  rgb(247, 244, 244);
+   font-weight: 600;
+   padding: 10px;
+   transition: 0.3s;
+   font-size: 0.9em;
+   text-transform: uppercase;
+
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(188, 66, 66);
+    padding: 2px;
+}
+/* Contenido de la web */
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px ;
+}
+.contenido.tituloBox{
+    position:relative;
+    max-width: 600px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: white;
+
+}
+.contenido .tituloBox h2 span{
+    background: rgb(91, 3, 3);
+    color: white;
+    padding: 0px 10px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5em;
+    color: white;
+    font-family: "Lora", serif;
+    font-weight: 300px;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .tituloBox a:hover{
+    background: rgb(188, 66, 66);
+    color: white;
+    transition: 0.5s;
+}
+.contenido.imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+
+}
+.contenido.imgBox img{
+    height: 80vh;
+}
+.contenido.imgBox img:hover{
+    height: 90vh;
+}
+/* Copyright */
+
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* Redes Sociales*/
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+
+}
+.redesSociales li a{ 
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(120, 24, 24);
+    transition: 0.3s;
+}
+
+/* Circulo */
+.circulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(188, 66, 88);
+    clip-path: circle(650px at right 800px);
+}
+ /* PROYECTOS DESTACADOS */
+
+
+ 
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.proyectos_destacados {
+    background-color: #999595;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-decoration: solid;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos_destacados h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.proyectos_destacados li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.proyectos_destacados li a {
+    text-decoration: none;
+    color:rgb(107, 31, 31);
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+/* QUIEN SOY */
+
+.quienSoy{
+    background-color: #999595;
+    text-align: justify;
+    text-decoration: solid;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.quienSoy h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.quienSoy p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* CV */
+
+.container-CV {
+    background-color: #999595;
+    max-width: 960px;
+    text-align: justify;
+    text-decoration: solid;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container-CV h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.container-CV p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.container-CV ul {
+    list-style: none;
+    padding-left: 20px;
+}
+.container-CV ul li {
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.formulario{
+    max-width: 960px;
+    height: 100%;
+    background-color: rgba(127, 122, 122, 0.767);
+    /* Fondo con transparencia */
+    padding: 2rem;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+  
