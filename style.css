@@ -1,20 +1,24 @@
+/* Importa la fuente tipográfica Lora desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Resetea márgenes y paddings, y aplica tipografía general */
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: "Lora", serif;
 }
 
+/* Define el fondo de la página con una imagen centrada y a pantalla completa */
 body{
     background-image: url(img/fondo-tecnologia-abstracta-placa-circuito-negro_88343-4645.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
 }
+
+/* Sección principal centrada y con padding para separar el contenido */
 section{
     position: relative;
     width: 100%;
@@ -24,6 +28,8 @@ section{
     align-items: center;
     padding: 100px;
 }
+
+/* Cabecera fija en la parte superior, con disposición centrada */
 header{
     position: absolute;
     top: 0px;
@@ -35,34 +41,39 @@ header{
     align-items: center;
     padding: 40px 100px;
 }
+
+/* Estilo para el logo del header */
 header .logo{
     color: rgb(247, 244, 244);
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
-    /* background:rgb(146, 154, 50); */
     border-radius: 5px;
     padding: 0px 10px;
-    font-family: "Lora", serif;
-    font-weight:600;
-    align-items:center;
+    font-weight: 600;
+    align-items: center;
 }
 
+/* Efecto hover para el logo del header */
 header.logo:hover{
     color: rgb(220, 17, 31);
-    background:  rgb(247, 244, 244);
+    background: rgb(247, 244, 244);
     transition: 1s;
-
 }
+
+/* Estilos para el contenedor del menú de navegación */
 header .navbar{
     position: relative;
     display: flex;
 }
 
+/* Estilo de cada ítem de la lista del menú */
 header .navbar li{
     list-style: none;
     margin-left: 30px;
 }
+
+/* Enlaces del menú de navegación */
 header .navbar li a{
    text-decoration: none;
    color :  rgb(247, 244, 244);
@@ -71,63 +82,76 @@ header .navbar li a{
    transition: 0.3s;
    font-size: 0.9em;
    text-transform: uppercase;
-
 }
+
+/* Efecto visual al pasar el cursor por los enlaces del menú */
 header .navbar li a:hover{
     border-bottom: 5px solid rgb(188, 66, 66);
     padding: 2px;
 }
-/* Contenido de la web */
+
+/* Contenedor general del contenido principal de la web */
 .contenido{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px ;
+    padding-left: 30px;
 }
+
+/* Caja del título principal, centrado y con ancho máximo */
 .contenido.tituloBox{
-    position:relative;
+    position: relative;
     max-width: 600px;
     text-align: center;
 }
+
+/* Título grande principal */
 .contenido .tituloBox h2{
     font-size: 3.5em;
     text-transform: uppercase;
     color: white;
-
 }
+
+/* Palabras destacadas del título */
 .contenido .tituloBox h2 span{
     background: rgb(91, 3, 3);
     color: white;
     padding: 0px 10px;
-    font-family: "Lora", serif;
     font-weight: 600;
     border-radius: 20px;
 }
+
+/* Descripción o subtítulo bajo el título principal */
 .contenido .tituloBox p{
     font-size: 1.8em;
     line-height: 1.5em;
     color: white;
-    font-family: "Lora", serif;
     font-weight: 300px;
     margin-bottom: 20px;
 }
+
+/* Botón de llamada a la acción */
 .contenido .tituloBox a{
     text-decoration: none;
     text-transform: uppercase;
     background: white;
     padding: 10px 20px;
-    margin: left 30px;
+    margin: left 30px; /* Posible error de sintaxis */
     border-radius: 20px;
     letter-spacing: 2px;
     transition: 0.5s;
 }
+
+/* Efecto hover en el botón */
 .contenido .tituloBox a:hover{
     background: rgb(188, 66, 66);
     color: white;
     transition: 0.5s;
 }
+
+/* Contenedor de imagen principal del contenido */
 .contenido.imgBox{
     width: 600px;
     display: flex;
@@ -135,16 +159,19 @@ header .navbar li a:hover{
     padding-right: 50px;
     margin-top: -50px;
     z-index: -5;
-
 }
+
+/* Imagen destacada del contenido */
 .contenido.imgBox img{
     height: 80vh;
 }
+
+/* Efecto hover sobre la imagen */
 .contenido.imgBox img:hover{
     height: 90vh;
 }
-/* Copyright */
 
+/* Pie de página con derechos de autor */
 .copyright{
     position: absolute;
     bottom: 0px;
@@ -155,13 +182,15 @@ header .navbar li a:hover{
     justify-content: center;
     align-items: center;
 }
+
+/* Texto del copyright */
 .copyright p{
     color: white;
     text-align: center;
     margin-left: 100px;
 }
 
-/* Redes Sociales*/
+/* Lista de íconos de redes sociales en la esquina inferior derecha */
 .redesSociales{
     position: absolute;
     right: 0px;
@@ -172,21 +201,26 @@ header .navbar li a:hover{
     align-items: center;
     list-style: none;
 }
+
+/* Cada ícono individual de red social */
 .redesSociales li{
     padding: 10px;
-
 }
+
+/* Estilo base de los íconos */
 .redesSociales li a{ 
     color: white;
     font-size: 2.5em;
     transition: 0.3s;
 }
+
+/* Efecto al pasar el cursor sobre los íconos */
 .redesSociales li:hover a{
     color: rgb(120, 24, 24);
     transition: 0.3s;
 }
 
-/* Circulo */
+/* Círculo decorativo para el fondo */
 .circulo{
     position: absolute;
     top: 0px;
@@ -194,17 +228,17 @@ header .navbar li a:hover{
     background: rgb(188, 66, 88);
     clip-path: circle(650px at right 800px);
 }
- /* PROYECTOS DESTACADOS */
 
+/* --- SECCIONES DE CONTENIDO --- */
 
- 
-
+/* Contenedor general reutilizable */
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/* Caja de proyectos destacados */
 .proyectos_destacados {
     background-color: #999595;
     font-size: 1.2rem;
@@ -215,25 +249,29 @@ header .navbar li a:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Título de la sección */
 .proyectos_destacados h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+
+/* Elementos de lista de proyectos */
 .proyectos_destacados li {
     list-style: none;
     margin-bottom: 10px;
     padding: 10px;
 }
+
+/* Enlaces a proyectos */
 .proyectos_destacados li a {
     text-decoration: none;
-    color:rgb(107, 31, 31);
+    color: rgb(107, 31, 31);
     font-weight: bold;
     transition: color 0.5s ease;
 }
 
-/* QUIEN SOY */
-
-.quienSoy{
+/* Sección 'Quién Soy' con estilo similar */
+.quienSoy {
     background-color: #999595;
     text-align: justify;
     text-decoration: solid;
@@ -241,18 +279,21 @@ header .navbar li a:hover{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Título de la sección */
 .quienSoy h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+
+/* Texto descriptivo */
 .quienSoy p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
-/* CV */
-
+/* Contenedor del CV */
 .container-CV {
     background-color: #999595;
     max-width: 960px;
@@ -262,37 +303,109 @@ header .navbar li a:hover{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Título del CV */
 .container-CV h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+
+/* Párrafos del CV */
 .container-CV p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
+/* Lista de elementos del CV */
 .container-CV ul {
     list-style: none;
     padding-left: 20px;
 }
+
+/* Ítems individuales del CV */
 .container-CV ul li {
     margin-bottom: 10px;
     padding: 2px;
 }
 
-/* FORMULARIO DE CONTACTO */
-
+/* Formulario de contacto con fondo translúcido */
 .formulario{
     max-width: 960px;
     height: 100%;
     background-color: rgba(127, 122, 122, 0.767);
-    /* Fondo con transparencia */
     padding: 2rem;
     margin: 20px;
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
-
 }
 
-  
+/* --- MEDIA QUERIES: Responsividad entre 576px y 992px --- */
+@media (min-width: 576px) and (max-width: 992px) {
+    
+    section {
+        padding: 60px 30px;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 30px;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar li {
+        margin: 10px 0;
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .contenido.imgBox {
+        justify-content: center;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .contenido.imgBox img {
+        height: 60vh;
+    }
+
+    .contenido.imgBox img:hover {
+        height: 65vh;
+    }
+
+    .contenido .tituloBox h2 {
+        font-size: 2.2em;
+    }
+
+    .contenido .tituloBox p {
+        font-size: 1.2em;
+    }
+
+    .copyright {
+        position: static;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .redesSociales {
+        position: static;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .circulo {
+        clip-path: circle(400px at right 400px);
+    }
+}
